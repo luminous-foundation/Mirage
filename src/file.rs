@@ -3,8 +3,6 @@ use std::fs;
 use std::fs::File;
 use std::io::Write;
 
-use serde_json::to_string;
-
 use crate::strings::expand_tilda_to_home;
 
 pub fn read_file(path: &str) -> String {

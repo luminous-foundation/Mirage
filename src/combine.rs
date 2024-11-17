@@ -4,7 +4,7 @@ use crate::{file::{self, write_to_file}, json::get_template, strings::split_stri
 
 pub fn combine(args: Vec<String>) {
     println!("{} {}{}", "Initializing".green(), "gitignore".purple().bold(), "!".green());
-    
+
     let mut buff = String::new();
     
     for arg in args {
@@ -23,9 +23,4 @@ pub fn combine(args: Vec<String>) {
     write_to_file(contents);
 
     println!("{}", "Done!".green());
-}
-
-enum SearchType {
-    Recursive,
-    Default
 }
