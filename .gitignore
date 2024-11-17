@@ -1,0 +1,9 @@
+# Directories
+target/
+.idea/
+.vscode/
+
+# Files
+*.rs.bk
+*.pdb
+Cargo.lock
